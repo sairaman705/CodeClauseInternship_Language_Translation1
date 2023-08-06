@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;150;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(82, 78, 183);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    padding: 15rem 15rem;
+}
+
+.container{
+    background-color: #fff;
+    width: 60rem;
+    height: 40vh;
+}
+
+.container .translator ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    list-style: none;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.container .translator ul li{
+    cursor: pointer;
+}
+
+.container .translator ul .bx-transfer{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.container .translator ul li .selecet_opt{
+    border: none;
+    padding: 0.7rem 1.6rem;
+}
+
+.container .translator .write_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.write_box .propery_from,
+.write_box .propery_translate{
+    width: 100%;
+    position: relative;
+}
+
+.write_box textarea{
+    width: 100%;
+    height: 17rem;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.write_box textarea:nth-child(1){
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+.write_box .icons{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+}
+
+.write_box .icons .bx{
+    background-color: rgba(0,0,0,0.2);
+    padding: 0.5rem 0.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
